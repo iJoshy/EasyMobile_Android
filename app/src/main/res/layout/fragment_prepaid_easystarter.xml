@@ -1,0 +1,246 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="4" >
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            card_view:cardElevation="4dp"
+            card_view:cardCornerRadius="0dp">
+
+            <ImageView
+                android:id="@+id/rechargeImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/easystarter_inner"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1.7" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/easystarterOptinBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:text="@string/icon_signin"
+                android:textSize="70dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_green"
+                android:onClick="showEasystarterOptin" />
+
+            <TextView
+                android:id="@+id/easystarterOptinText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="60dp"
+                android:layout_marginBottom="30dp"
+                android:text="opt in"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="2.3" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5" >
+
+            <Button
+                android:id="@+id/easystarterAddBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|top"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:paddingTop="5dp"
+                android:text="@string/icon_add"
+                android:textSize="70dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_green"
+                android:onClick="showEasystarterAddNo" />
+
+            <TextView
+                android:id="@+id/easystarterAddText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="-2dp"
+                android:text="add a number\n"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+            <TextView
+                android:id="@+id/easystarterAddText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/youandme"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5" >
+
+            <Button
+                android:id="@+id/easystarterDelBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|top"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="4dp"
+                android:paddingTop="7dp"
+                android:paddingRight="35dp"
+                android:text="@string/icon_trash"
+                android:textSize="70dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_green"
+                android:onClick="showEasystarterDeleteNo" />
+
+            <TextView
+                android:id="@+id/easystarterDelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="10dp"
+                android:text="delete a\nnumber"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="2" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5" >
+
+            <Button
+                android:id="@+id/easystarterCheckBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|bottom"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:paddingTop="30dp"
+                android:paddingLeft="30dp"
+                android:text="@string/icon_check"
+                android:textSize="70dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_green"
+                android:onClick="showEasystarterCheckNo" />
+
+            <TextView
+                android:id="@+id/easystarterCheckText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_margin="10dp"
+                android:text="check\nnumber"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5" >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|top"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/button_gray"
+                android:onClick="showEasystarterReplaceNo" />
+
+            <TextView
+                android:id="@+id/easystarterReplaceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_margin="10dp"
+                android:text="replace a\nnumber"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

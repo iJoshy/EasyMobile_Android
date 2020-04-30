@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/buyDataBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginBottom="50dp"
+                android:text="@string/icon_lock"
+                android:textSize="100dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorAccent"
+                android:onClick="buyDataPlan" />
+
+            <TextView
+                android:id="@+id/databalanceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="120dp"
+                android:layout_marginLeft="10dp"
+                android:text="An Update is available\n on the App Store"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,306 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4" >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="-4dp"
+                android:layout_marginBottom="-5dp"
+                android:background="@drawable/check_balance"
+                android:onClick="showBalance" />
+
+            <TextView
+                android:id="@+id/airtimebalanceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="-2dp"
+                android:layout_marginLeft="10dp"
+                android:text="airtime\nbalance"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="6" >
+
+            <Button
+                android:id="@+id/databalanceBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|top"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:background="@drawable/button_green"
+                android:text="@string/icon_data"
+                android:textSize="80dp"
+                android:textColor="@color/white"
+                android:onClick="showDataBalance" />
+
+            <TextView
+                android:id="@+id/databalanceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="10dp"
+                android:text="data\nbalance"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="5" >
+
+            <Button
+                android:id="@+id/rechargeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|top"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:paddingLeft="10dp"
+                android:text="@string/icon_phone"
+                android:textSize="120dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_green"
+                android:onClick="showPaymentOptionScreen"/>
+
+            <TextView
+                android:id="@+id/rechargeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_margin="5dp"
+                android:text="recharge\naccount"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="5" >
+
+            <Button
+                android:id="@+id/buyDataBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|bottom"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="2dp"
+                android:paddingRight="10dp"
+                android:text="@string/icon_basket"
+                android:textSize="100dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_green"
+                android:onClick="showBuydataScreen" />
+
+            <TextView
+                android:id="@+id/buyDataText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="buy data"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4" >
+
+            <Button
+                android:id="@+id/shownumberBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|top"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="4dp"
+                android:paddingLeft="3dp"
+                android:text="show my\nnumber"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/button_gray"
+                android:onClick="showNumber"/>
+
+            <TextView
+                android:id="@+id/shownumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="10dp"
+                android:text="0809..."
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="normal"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="6" >
+
+            <Button
+                android:id="@+id/rechargeOthersBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|top"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="-5dp"
+                android:background="@drawable/recharge_others"
+                android:onClick="showRechargeOthersScreen" />
+
+            <TextView
+                android:id="@+id/rechargeOthersText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="10dp"
+                android:text="recharge\nothers"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="5" >
+
+            <Button
+                android:id="@+id/checkpackageBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="-5dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/check_package"
+                android:onClick="showPackage"/>
+
+            <TextView
+                android:id="@+id/packageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="show my\npackage"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="5" >
+
+            <Button
+                android:id="@+id/transferBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|top"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="10dp"
+                android:text="@string/icon_transfer"
+                android:textSize="80dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_gray"
+                android:onClick="showTransferScreen"/>
+
+            <TextView
+                android:id="@+id/transferText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:text="credit\ntransfer"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

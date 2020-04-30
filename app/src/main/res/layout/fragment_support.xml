@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4" >
+
+            <Button
+                android:id="@+id/websiteBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|top"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:padding="10dp"
+                android:text="@string/icon_website"
+                android:textSize="95dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_gray"
+                android:onClick="showWebsiteScreen" />
+
+            <TextView
+                android:id="@+id/websiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="10dp"
+                android:text="etisalat\nwebsite"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/colorOrange"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="6" >
+
+            <Button
+                android:id="@+id/emailBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|top"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="2dp"
+                android:padding="10dp"
+                android:text="@string/icon_email"
+                android:textSize="100dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_green"
+                android:onClick="showEmailScreen" />
+
+            <TextView
+                android:id="@+id/emailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_margin="20dp"
+                android:text="email"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="5" >
+
+            <Button
+                android:id="@+id/chatBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|bottom"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:padding="10dp"
+                android:text="@string/icon_chat"
+                android:textSize="120dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_green"
+                android:onClick="showChatScreen"/>
+
+            <TextView
+                android:id="@+id/chatText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_margin="5dp"
+                android:text="instant\nchat"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="5" >
+
+            <Button
+                android:id="@+id/facebookBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|top"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="2dp"
+                android:padding="10dp"
+                android:text="@string/icon_facebook"
+                android:textSize="100dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_gray"
+                android:onClick="showFacebookScreen"/>
+
+            <TextView
+                android:id="@+id/facebookText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_margin="5dp"
+                android:text="facebook\nsupport"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/twitterBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|bottom"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="3dp"
+                android:paddingRight="40dp"
+                android:text="@string/icon_twitter"
+                android:textSize="120dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_gray"
+                android:onClick="showTwitterScreen"/>
+
+            <TextView
+                android:id="@+id/twitterText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="twitter\nsupport"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="100dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

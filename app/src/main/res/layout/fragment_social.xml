@@ -1,0 +1,125 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/socialText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:text="Share on social media" />
+
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/facebookBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:background="@drawable/button_facebook"
+            android:text="@string/icon_facebook"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:onClick="facebookClicked" />
+
+        <TextView
+            android:id="@+id/facebookText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Share on Facebook"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:elevation="100dp"
+            android:onClick="facebookClicked" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/twitterBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:background="@drawable/button_twitter"
+            android:text="@string/icon_twitter"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:onClick="twitterClicked" />
+
+        <TextView
+            android:id="@+id/twitterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Share on Twitter"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:elevation="100dp"
+            android:onClick="twitterClicked"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/googleplusBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:background="@drawable/button_googleplus"
+            android:text="@string/icon_googleplus"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:onClick="gplusClicked" />
+
+        <TextView
+            android:id="@+id/googleplusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Share on Google+"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:elevation="100dp"
+            android:onClick="gplusClicked"/>
+
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
